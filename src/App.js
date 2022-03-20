@@ -21,7 +21,7 @@ function App() {
     <div className="container mx-auto">
       <div className="grid grid-cols-3 gap-4">
         {images.map((image) => (
-          <ImageCard key={image.id} />
+          <ImageCard key={image.id} image={image} />
         )
         )
         }
