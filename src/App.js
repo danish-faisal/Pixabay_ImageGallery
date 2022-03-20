@@ -19,9 +19,9 @@ function App() {
 
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="flex flex-row flex-wrap justify-center items-start gap-4">
         {images.map((image) => (
-          <ImageCard key={image.id} image={image} />
+          <ImageCard className="basis-1/3" key={image.id} image={image} />
         )
         )
         }
