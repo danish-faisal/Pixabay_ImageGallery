@@ -19,13 +19,19 @@ function App() {
 
   return (
     <div className="container mx-auto">
-      <div className="flex flex-row flex-wrap justify-center items-start gap-4">
-        {images.map((image) => (
-          <ImageCard className="basis-1/3" key={image.id} image={image} />
-        )
-        )
-        }
-      </div>
+      {isLoading ? (
+        <h1 className="text-6xl text-center mx-auto mt-32">
+          Loading...
+        </h1>
+      ) : (
+        <div className="flex flex-row flex-wrap justify-center items-start gap-4">
+          {images.map((image) => (
+            <ImageCard className="basis-1/3" key={image.id} image={image} />
+          )
+          )
+          }
+        </div>
+      )}
     </div>
   );
 }
