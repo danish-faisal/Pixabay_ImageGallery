@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Project Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Image gallery app using Pixabay API built using React & Tailwind CSS, deployed on Netlify
+
+Live: https://imagegallery-pixabay.netlify.app/
 
 ## Available Scripts
 
